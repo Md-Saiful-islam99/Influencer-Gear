@@ -132,3 +132,27 @@ text-align: center;
 .item-info {
     margin: 15px;
 }
+
+/* Footer items */
+
+.footer-item{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}    
+
+.footer-item h1 {
+    color:white;
+    font-size: 40px;
+}
+
+.footer-item p {
+    color:white;
+    font-size: 18px;
+}
+
+.footer-icon i {
+    font-size: 20px;
+    color:white;
+    margin: 15px 20px;
+}
