@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&family=Nunito+Sans:wght@400;600;700;800&family=Pacifico&family=Poppins:wght@100;200;300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+body{
+    background-color: #ffffff;;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 200px;
+    align-items: center;
+}
+.navlink{
+    display: flex;
+}
+.navlink li {
+    display: inline-block;
+}
+.navlink li a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    
+   
+}
+.nav-icon{
+    margin-left: 40px;
+}
+.nav-icon i{
+    margin-left: 10px;
+}
+
+/* influencer journey */
+
+.journey-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 200px;
+}
+.info h1{
+font-size: 40px;
+margin-bottom: 10px;
+font-weight: 800;
+}
+.info p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.prebook-btn  {
+    margin-top: 40px; 
+    background-color: #E02C6D; 
+    padding: 10px;
+    width: 140px;
+    border-radius: 20px;
+   
+    
+}
+.prebook-btn a {
+   text-decoration: none; 
+   margin: 0 5px;
+   color: white;
+}
+.fa-arrow-right{
+    color: white;
+    margin-bottom:2px ;
+}
+
+
+
+.influencer-camera{
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px rgb(146, 136, 136);
+
+}
+
+/* companies */
+
+hr{
+    justify-content: center;
+    margin: 0 300px;
+}
+
+.company-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.company-name a img{
+    margin: 10px 50px;
+    align-items: center;
+}
+/* Populer Collection  */
+.collection{
+    margin: 0 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+.collection-text{
+text-align: center;
+   margin: 50px 0;
+   font-size: 20px;   
+}
+.items{
+    margin: 10px;
+    width: 329px;
+    background-color: #faf8f8;  
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(194, 190, 190);
+    
+}
+.items img{
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+}
+.poster-details{
+    margin: 15px;
+}
+.item-rating{
+    margin: 15px;
+}
+.item-info {
+    margin: 15px;
+}
