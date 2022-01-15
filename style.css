@@ -266,8 +266,8 @@ text-align: center;
     }
     .info p{
         text-align: center;
-        background-color: #E02C6D;   
-     }
+       
+    }
     .influencer-camera{
         align-items: center;
         margin-bottom: 10px;
@@ -333,9 +333,15 @@ text-align: center;
         margin-bottom: 20px;
         
     } 
-    .info p{
+    .info h1 {
+        font-size: 35px;
+        text-align: center;
+        width: 100%;
+     }
+    .info-text {
         text-align: center;
         align-items: center;
+        margin: 0 100px;
     }
 }
 
