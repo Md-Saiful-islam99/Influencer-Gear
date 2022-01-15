@@ -9,35 +9,11 @@ body{
     background-color: #ffffff;;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 200px;
-    align-items: center;
-}
-.navlink{
-    display: flex;
-}
-.navlink li {
-    display: inline-block;
-}
-.navlink li a {
-    margin-left: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    font-weight: 700;  
-}
-.navlink li a:hover {
-    color: #E02C6D;
+
+.logo {
+    margin: 50px 0 0 300px ;
 }
 
-.nav-icon{
-    margin-left: 40px;
-}
-.nav-icon i{
-    margin-left: 10px;
-}
 
 /* influencer journey */
 main{
@@ -47,10 +23,16 @@ main{
 }
 
 .journey-part{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin: 100px 200px;
+    margin: 100px 300px;
+}
+
+.info{
+    width: 900px;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
 }
 .info h1{
     font-size: 40px;
@@ -59,7 +41,7 @@ main{
 }
 .info p{
     font-size: 18px;
-    margin: 10px 30px 0 0;
+    
 }
 .prebook-btn  {
     margin-top: 40px; 
@@ -252,21 +234,111 @@ text-align: center;
 /* Responsive Part  */
 
 /* Mobile Devices */
+
 @media only screen and (max-width:688px) {
-    .navbar{
-        width: 100%;
-        
+    .logo{
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+       padding-top: 20px;
+    }
+    .logo h1{
+      text-align: center;
+      font-size: 25px;
+      width: 100%;  
     }
     .journey-part{
-        display:flex;
-        width: 100%;
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center; 
     }
     .info{
-        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 20px;
+        
+    }   
+    .info h1 {
+       font-size: 35px;
+       text-align: center;
+       width: 100%;
     }
-    .player, .blog{
+    .info p{
+        text-align: center;
+        background-color: #E02C6D;   
+     }
+    .influencer-camera{
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .influencer-camera img{
+        width: 300px;
+        align-items: center;
+        height: 300px;   
+    }
+    .collection{
+        grid-template-columns: repeat(1, 1fr);
+        
+
+    }
+    .items{
         flex-direction: column;
         align-items: center;
     }
 
+    .slider-part{
+        margin: 50px;
+    }
+
+    .slider{
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    
+    }
+   
+    .slider span {
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(220px);
+    
+    }
+    
+    .slider span:hover img {
+        transform: translateY(-50px) scale(1.2);
+    }
+
+    .footer-item{
+        text-align: center;
+        width: 100%;
+    }   
+   
 }
+
+/* For Tablet version */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .collection{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .journey-part{
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center; 
+    }
+    .info{
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 20px;
+        
+    } 
+    .info p{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+/*  */
+
