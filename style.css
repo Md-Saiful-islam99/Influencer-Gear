@@ -343,6 +343,32 @@ text-align: center;
         align-items: center;
         margin: 0 100px;
     }
+    
+    .slider-part{
+        margin: 50px;
+    }
+
+    .slider{
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    
+    }
+   
+    .slider span {
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(250px);
+    
+    }
+    
+    .slider span:hover img {
+        transform: translateY(-50px) scale(1.2);
+    }
+
+    .footer-item{
+        text-align: center;
+        width: 100%;
+    }  
 }
 
 
