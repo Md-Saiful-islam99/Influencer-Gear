@@ -6,12 +6,16 @@
     
 }
 body{
-    background-color: #ffffff;;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
 }
 
 
 .logo {
     margin: 50px 0 0 300px ;
+   
 }
 
 
@@ -30,9 +34,10 @@ main{
 }
 
 .info{
-    width: 900px;
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
+    
 }
 .info h1{
     font-size: 40px;
@@ -63,8 +68,10 @@ main{
 }
 
 .influencer-camera{
+    margin-left: 100px;
+    width: 500px;
     border-radius: 20px;
-    box-shadow: 1px 3px 5px rgb(146, 136, 136);
+    box-shadow: 1px 3px 5px rgb(146, 136, 136); 
 
 }
 .influencer-camera img:hover{
@@ -75,24 +82,7 @@ main{
 }
 
 
-/* companies */
 
-hr{
-    justify-content: center;
-    margin: 0 300px;
-}
-
-.company-name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-}
-.company-name a img{
-    margin: 10px 50px;
-    align-items: center;
-}
 /* Populer Collection  */
 .collection{
     display: grid;
@@ -287,6 +277,17 @@ text-align: center;
         align-items: center;
     }
 
+    .influencer-camera{
+        margin-top: 100px;
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 1px 3px 5px rgb(146, 136, 136); 
+    
+    }
+    .influencer-camera img{
+        width: 300px;
+    }
+
     .slider-part{
         margin: 50px;
     }
@@ -317,6 +318,7 @@ text-align: center;
 
 /* For Tablet version */
 @media only screen and (min-width:688px) and (max-width:992px) {
+
     .collection{
         grid-template-columns: repeat(2, 1fr);
         
@@ -342,6 +344,16 @@ text-align: center;
         text-align: center;
         align-items: center;
         margin: 0 100px;
+    }
+    .influencer-camera{
+        margin-top: 100px;
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: 1px 3px 5px rgb(146, 136, 136); 
+    
+    }
+    .influencer-camera img{
+        width: 300px;
     }
     
     .slider-part{
